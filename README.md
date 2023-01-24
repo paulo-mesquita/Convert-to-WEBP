@@ -13,7 +13,7 @@ Uma conexão à internet
 - Abra o arquivo HTML/LINK no navegador
 - Escolha a qualidade da imagem (de 0% a 100%)
 - Escolha a Largura e Altura em pixel da imagem
-- Selecione ou arraste as imagens para a página
+- Selecione ou arraste as imagens para a página ( Sem suporte para imagens .HEIC)
 - Clique em "Baixar imagens" para baixar as imagens convertidas no diretório desejado
 - Escolha o nome para as imagens.
 
