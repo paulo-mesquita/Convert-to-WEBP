@@ -1,0 +1,111 @@
+/* Define a fonte padrão para toda a página */
+body, * {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Adiciona cor de fundo para a página inteira */
+html, body {
+  background-color: #F5F5F5;
+}
+
+/* Adiciona estilo para o elemento de entrada de arquivo */
+#image-file {
+  display: none; /* Oculta o elemento por padrão */
+}
+
+/* Adiciona estilo para a zona de soltura */
+#drop-zone {
+  border: 2px dashed #ccc; /* Adiciona borda tracejada */
+  padding: 20px; /* Adiciona espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  margin: 20px 0; /* Adiciona espaçamento em cima e em baixo */
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  background-color: #fff; /* Adiciona cor de fundo */
+}
+
+/* Adiciona estilo para a zona de soltura quando uma imagem é solta */
+#drop-zone:hover {
+  background-color: #eee; /* Adiciona cor de fundo */
+  border-color: #666; /* Altera a cor da borda */
+}
+
+/* Adiciona estilo para a imagem exibida */
+#converted-images {
+  display: flex; /* Exibe as imagens lado a lado */
+  flex-wrap: wrap; /* Quebra as imagens para a próxima linha se necessário */
+}
+
+#converted-images img {
+  max-width: 100%; /* Redimensiona a imagem para caber na tela */
+  margin: 10px; /* Adiciona espaçamento entre as imagens */
+  border-radius: 10px; /* Adiciona borda arredondada */
+  box-shadow: 0px 0px 10px #ccc; /* Adiciona sombra */
+}
+
+/* Estiliza os botões */
+button {
+  background-color: #007bff; /* Adiciona cor de fundo */
+  color: #fff; /* Adiciona cor de texto */
+  border: none; /* Remove borda */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  margin-top: 10px; /* Adiciona espaçamento acima do botão */
+  cursor: pointer; /* Adiciona cursor de mão */
+  transition: all 0.2s ease-in-out; /* Adiciona transição suave */
+}
+
+/* Adiciona estilo de hover para os botões */
+button:hover {
+  background-color: #0069d9; /* Altera a cor de fundo */
+}
+
+/* Adiciona estilos para o elemento de input e o texto de label */
+label {
+  color: #000; /* Adiciona cor de texto /
+  font-size: 18px; / Aumenta o tamanho da fonte /
+  padding: 10px; / Adiciona espaçamento interno */
+  }
+  
+  input[type="number"] {
+  padding: 10px; /* Adiciona espaçamento interno */
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  width: 100px; /* Define a largura do elemento */
+  margin: 0 10px; /* Adiciona espaçamento à direita e à esquerda */
+  }
+  
+  /* Adiciona icones para os botões */
+  button i {
+  margin-right: 10px; /* Adiciona espaçamento à direita do ícone */
+  }
+  
+  /* Adiciona estilo para a barra de progresso */
+  #progress-bar {
+  width: 100%; /* Define a largura da barra */
+  height: 20px; /* Define a altura da barra */
+  background-color: #ddd; /* Define a cor de fundo */
+  position: relative; /* Define a posição da barra /
+  border-radius: 10px; / Adiciona borda arredondada */
+  }
+  
+  /* Adiciona estilo para a barra de progresso ativa */
+  #progress-bar::before {
+  content: ""; /* Limpa o conteúdo */
+  width: 0; /* Define a largura inicial */
+  height: 100%; /* Define a altura */
+  background-color: #007bff; /* Define a cor de fundo */
+  position: absolute; /* Define a posição */
+  top: 0; /* Define a posição no topo */
+  left: 0; /* Define a posição à esquerda */
+  border-radius: 10px; /* Adiciona borda arredondada */
+  transition: width 0.5s ease-in-out; /* Adiciona transição suave */
+  }
+  
+  /* Adiciona estilo para o texto de porcentagem */
+  #progress-bar span {
+  color: #fff; /* Define a cor do texto */
+  font-size: 18px; /* Define o tamanho da fonte */
+  position: absolute; /* Define a posição */
+  top: 50%; /* Define a posição no topo */
+  left: 50%; /* Define a posição à esquerda */
+  transform: translate(-50%, -50%); /* Centraliza o texto */
+  }
