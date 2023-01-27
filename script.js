@@ -61,19 +61,28 @@ function converterImagens(event) {
     }
 }
 
+//let caminhoSalvar;
+
 function downloadImagens() {
     // Pede o nome para salvar as imagens
     let nomeImagem = prompt("Insira o nome para salvar as imagens:");
     if (!nomeImagem) {
       return;
     }
+    let path = localStorage.getItem("path");
+    // Se não houver caminho salvo no armazenamento local, pede para o usuário escolher
+    if (!path) {
+      path = prompt("Insira o caminho onde deseja salvar as imagens:");
+      localStorage.setItem("path", path);
+    }
   
     // Percorre a lista de imagens convertidas e inicia o download
     for (let i = 0; i < imagensConvertidas.length; i++) {
-      let a = document.createElement('a');
-      a.href = imagensConvertidas[i];
-      a.download = nomeImagem + "_" + i + ".webp";
-      a.click();
+        // cria um link para forçar o download
+        let a = document.createElement('a');
+        a.href = imagensConvertidas[i];
+        // adiciona o caminho selecionado
+        a.download = nomeImagem + " - " + i + ".webp";
+        a.click();
     }
-  }
-  
+}
