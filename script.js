@@ -61,7 +61,7 @@ function converterImagens(event) {
     }
 }
 
-//let caminhoSalvar; 
+//let caminhoSalvar;
 
 function downloadImagens() {
     // Pede o nome para salvar as imagens
